@@ -52,3 +52,39 @@
   font-size: 0.9rem;
   line-height: 1.4;
 }
+/* Hide arrows on mobile */
+@media (max-width: 767px) {
+  .nav-arrows {
+    display: none !important;
+  }
+}
+
+/* Swiper adjustments */
+.swiper {
+  padding-bottom: 30px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+/* Hide nav arrows on mobile if needed */
+@media (max-width: 767px) {
+  .nav-arrows {
+    display: none !important;
+  }
+}
+
+/* Add smooth swipe spacing */
+.communities-swiper {
+  padding-bottom: 20px;
+}
+
+.community-card {
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.community-card:active {
+  cursor: grabbing;
+}

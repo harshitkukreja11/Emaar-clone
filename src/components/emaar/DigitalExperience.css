@@ -1,53 +1,80 @@
 .digital-exp-section {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+  flex-wrap: wrap; /* allow stacking on mobile */
 }
 
-.exp-text h2 {
-  font-size: 2.5rem;
-  color: #022047; /* dark blue or whatever matches site */
-  margin-bottom: 1rem;
-}
-
-.exp-text p {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
-  color: #555;
+/* Image */
+.digital-exp-image-wrapper {
+  flex: 1;
 }
 
 .digital-exp-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  border-radius: 8px;
   transition: transform 0.5s ease;
 }
 
 .digital-exp-image:hover {
   transform: scale(1.02);
 }
+
+/* Text */
+.exp-text {
+  flex: 1;
+}
+
+/* App buttons */
 .app-buttons {
   display: flex;
-  align-items: center;
-  gap: 20px; /* spacing between buttons */
+  gap: 20px;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.store-btn {
-  height: 55px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-
-
-
-/* Responsive adjustments */
+/* ===== Responsive adjustments ===== */
 @media (max-width: 992px) {
+  .digital-exp-section {
+    flex-direction: column; /* stack elements */
+  }
+
+  /* Make image appear first */
+  .digital-exp-image-wrapper {
+    order: -1;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .exp-text {
+    text-align: center;
+  }
+
   .exp-text h2 {
     font-size: 2rem;
   }
+
   .exp-text p {
     font-size: 1rem;
   }
-  .digital-exp-image {
-    margin-top: 2rem;
+
+  .app-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .exp-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .exp-text p {
+    font-size: 0.95rem;
+  }
+
+  .store-btn {
+    height: 50px;
   }
 }
