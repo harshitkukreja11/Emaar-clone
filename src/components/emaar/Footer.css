@@ -1,0 +1,143 @@
+/* === Footer Wrapper === */
+footer {
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* === Emaar Title === */
+footer h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/* === Section Headings === */
+footer h6 {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* === Lists === */
+footer ul {
+  padding-left: 0;
+  color: #666;
+  list-style: none;
+   letter-spacing: 1px;
+
+}
+
+footer ul li {
+  margin-bottom: 6px;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect — blue underline like Emaar */
+footer ul li:hover {
+  color: #0050a0;
+  
+}
+
+/* === Input + Button (Subscribe) === */
+footer input[type="email"] {
+  
+  padding: 10px 15px;
+
+  transition: border-color 0.3s ease;
+}
+
+footer input[type="email"]:focus {
+  border-color: #000;
+  box-shadow: 0 0 4px rgba(0, 80, 160, 0.3);
+}
+
+footer button {
+  background-color: #0050a0;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+footer button:hover {
+  background-color: #003b7a;
+  transform: scale(1.05);
+}
+
+/* === Section Divider === */
+footer hr {
+  border-top: 1px solid #ddd;
+}
+
+/* === Bottom Text === */
+footer .border-top {
+  border-color: white !important;
+  
+}
+
+footer .text-muted {
+  color: #666 !important;
+}
+/* --- Trending Searches layout --- */
+.footer-links {
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  cursor: pointer;
+     letter-spacing: 2px;
+       color: #666;
+
+
+}
+
+.footer-links li:hover {
+  color: #0050a0;
+  
+}
+.footer-bottom-text {
+  word-spacing: 10px;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+.footer-bottom-text :hover{
+    color: #0050a0;
+    cursor: pointer;
+}
+
+
+
+/* Optional: Add spacing between columns on smaller devices */
+@media (max-width: 768px) {
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* === Responsive Layout === */
+@media (max-width: 768px) {
+  footer .input-group {
+    justify-content: center;
+  }
+
+  footer input[type="email"] {
+    width: 100% !important;
+  }
+
+  footer button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  footer h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

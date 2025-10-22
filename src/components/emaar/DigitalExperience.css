@@ -1,0 +1,53 @@
+.digital-exp-section {
+  overflow: hidden;
+}
+
+.exp-text h2 {
+  font-size: 2.5rem;
+  color: #022047; /* dark blue or whatever matches site */
+  margin-bottom: 1rem;
+}
+
+.exp-text p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.digital-exp-image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.digital-exp-image:hover {
+  transform: scale(1.02);
+}
+.app-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between buttons */
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  height: 55px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .exp-text h2 {
+    font-size: 2rem;
+  }
+  .exp-text p {
+    font-size: 1rem;
+  }
+  .digital-exp-image {
+    margin-top: 2rem;
+  }
+}

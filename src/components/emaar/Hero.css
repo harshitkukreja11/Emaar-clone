@@ -1,0 +1,78 @@
+.carousel-item {
+  transition: opacity 1s ease-in-out;
+}
+
+h1, p {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+h1,
+p {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+/* Make filter section float at bottom of hero */
+.filter-wrapper {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  z-index: 10;
+}
+
+/* Optional: add spacing below hero to prevent overlap */
+header {
+  margin-bottom: 120px;
+}
+
+/* Smooth fade between slides */
+.carousel-fade .carousel-item {
+  transition: opacity 1.2s ease-in-out;
+}
+
+/* Indicators style (optional for better UX) */
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+/* Floating Filter Section */
+/* Floating Filter Section - moved upwards */
+.floating-filter {
+  position: absolute;
+  bottom: 20px; /* move it closer to the button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* On small screens, adjust position and width */
+@media (max-width: 768px) {
+  .floating-filter {
+    bottom: 15px; /* slightly less on mobile */
+    width: 95%;
+  }
+}
+
+
+

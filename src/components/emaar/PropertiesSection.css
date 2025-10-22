@@ -1,0 +1,99 @@
+.properties-section {
+  overflow: hidden;
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+}
+
+.section-header {
+  margin-bottom: 0; /* remove gap below PROPERTIES */
+  line-height: 1;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -270px; /* pulls the heading closer to PROPERTIES */
+}
+
+/* Remove top margin from first heading */
+.no-top-gap {
+  margin-top: 5 !important;
+}
+
+/* Image grid */
+.image-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-images,
+.right-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.property-card {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.property-image {
+  width: 100%;
+  object-fit: cover;
+  
+  transition: transform 0.4s ease;
+}
+
+.property-card:hover .property-image {
+  transform: scale(1.04);
+}
+
+.property-title {
+  text-align: center;
+  font-weight: 600;
+  color: #222;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* Make first image taller */
+.large-card img {
+  height: 420px !important;
+}
+
+.left-images .property-card:not(.large-card) img {
+  height: 280px;
+}
+
+.right-images .property-card img {
+  height: 240px;
+}
+
+/* Closer spacing between PROPERTIES and next heading */
+.properties-section h2.text-secondary {
+  margin-bottom: 0.4rem !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .large-card img {
+    height: 340px !important;
+  }
+
+  .text-section {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .property-title {
+    font-size: 0.9rem;
+  }
+}

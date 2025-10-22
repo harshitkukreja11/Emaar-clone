@@ -1,0 +1,29 @@
+.info-section h2 {
+  font-size: 1rem;
+
+}
+
+.info-card img {
+  height: 240px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.info-card .card-body {
+  padding: 1.5rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .info-card img {
+    height: 200px;
+  }
+
+  .info-section h2 {
+    font-size: 1.6rem;
+  }
+}
