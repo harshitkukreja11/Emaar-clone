@@ -1,0 +1,59 @@
+.contact-hero {
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-hero .container {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Help section */
+.help-section {
+  background-color: #f8f9fa;
+}
+
+.help-section h3 {
+  color: #222;
+}
+
+.help-section p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.help-section .form-select {
+  max-width: 350px;
+}
+
+.office {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.view-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .contact-hero .container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .help-section {
+    padding: 40px 20px;
+  }
+}

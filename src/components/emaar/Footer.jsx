@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // ✅ import Link
 import "./Footer.css";
 
 export function Footer() {
@@ -12,114 +13,114 @@ export function Footer() {
     {
       title: "About Emaar",
       items: [
-        "Who We Are",
-        "Contact Us",
-        "FAQ",
-        "Careers",
-        "Whistleblower Line",
-        "Investor Relations",
-        "Press Releases",
-        "Emaar Blogs",
-        "Emaar Brand",
-        "Mortgage Calculator",
-        "Scam Alerts",
-        "Emaar Sustainability",
-        "Real Estate Glossary",
+        { name: "Who We Are" },
+        { name: "Contact Us", link: "/contact" }, // ✅ Added link
+        { name: "FAQ" },
+        { name: "Careers" },
+        { name: "Whistleblower Line" },
+        { name: "Investor Relations" },
+        { name: "Press Releases" },
+        { name: "Emaar Blogs" },
+        { name: "Emaar Brand" },
+        { name: "Mortgage Calculator" },
+        { name: "Scam Alerts" },
+        { name: "Emaar Sustainability" },
+        { name: "Real Estate Glossary" },
       ],
     },
     {
       title: "Communities",
       items: [
-        "Expo Living",
-        "The Oasis",
-        "The Heights Country Club & Wellness",
-        "Address Al Marjan Island",
-        "Dubai Hills Estate",
-        "Dubai Creek Harbour",
-        "The Valley",
-        "Emaar Beachfront",
-        "Rashid Yachts & Marina",
-        "Dubai Marina",
-        "Downtown Dubai",
-        "Arabian Ranches III",
-        "Emaar South",
+        { name: "Expo Living" },
+        { name: "The Oasis" },
+        { name: "The Heights Country Club & Wellness" },
+        { name: "Address Al Marjan Island" },
+        { name: "Dubai Hills Estate" },
+        { name: "Dubai Creek Harbour" },
+        { name: "The Valley" },
+        { name: "Emaar Beachfront" },
+        { name: "Rashid Yachts & Marina" },
+        { name: "Dubai Marina" },
+        { name: "Downtown Dubai" },
+        { name: "Arabian Ranches III" },
+        { name: "Emaar South" },
       ],
     },
     {
       title: "Latest Launches",
       items: [
-        "Lyvia by Palace at Dubai Creek Harbour",
-        "Aurea at Rashid Yachts & Marina",
-        "Vindera at The Valley",
-        "Chevalia Estate 2",
-        "Sera 2 at Rashid Yachts & Marina",
-        "Selvara 3 at Grand Polo Club & Resort",
-        "Selvara 4 at Grand Polo Club & Resort",
-        "Montiva by Vida at Dubai Creek Harbour",
-        "Baystar by Vida at Rashid Yachts & Marina",
-        "Rosehill at Dubai Hills Estate",
-        "View All Properties",
+        { name: "Lyvia by Palace at Dubai Creek Harbour" },
+        { name: "Aurea at Rashid Yachts & Marina" },
+        { name: "Vindera at The Valley" },
+        { name: "Chevalia Estate 2" },
+        { name: "Sera 2 at Rashid Yachts & Marina" },
+        { name: "Selvara 3 at Grand Polo Club & Resort" },
+        { name: "Selvara 4 at Grand Polo Club & Resort" },
+        { name: "Montiva by Vida at Dubai Creek Harbour" },
+        { name: "Baystar by Vida at Rashid Yachts & Marina" },
+        { name: "Rosehill at Dubai Hills Estate" },
+        { name: "View All Properties" },
       ],
     },
     {
       title: "Emaar International",
       items: [
-        "KSA",
-        "India",
-        "Pakistan",
-        "Egypt",
-        "Morocco",
-        "Turkey",
-        "Others",
-        "Emaar Community Management",
-        "Vyom",
+        { name: "KSA" },
+        { name: "India" },
+        { name: "Pakistan" },
+        { name: "Egypt" },
+        { name: "Morocco" },
+        { name: "Turkey" },
+        { name: "Others" },
+        { name: "Emaar Community Management" },
+        { name: "Vyom" },
       ],
     },
     {
       title: "Emaar Entertainment",
       items: [
-        "Burj Khalifa",
-        "Reel Cinemas",
-        "Dubai Opera",
-        "Dubai Ice Rink",
-        "KidZania",
-        "Sky Views Dubai",
-        "Dubai Aquarium",
-        "Arabic Music Institute",
-        "Dubai Fountain",
-        "View All",
+        { name: "Burj Khalifa" },
+        { name: "Reel Cinemas" },
+        { name: "Dubai Opera" },
+        { name: "Dubai Ice Rink" },
+        { name: "KidZania" },
+        { name: "Sky Views Dubai" },
+        { name: "Dubai Aquarium" },
+        { name: "Arabic Music Institute" },
+        { name: "Dubai Fountain" },
+        { name: "View All" },
       ],
     },
     {
       title: "Emaar Malls",
       items: [
-        "Dubai Mall",
-        "Dubai Marina Mall",
-        "Dubai Hills Mall",
-        "Gold and Diamond Park",
-        "Souk Al Bahar",
-        "The Springs Souk",
+        { name: "Dubai Mall" },
+        { name: "Dubai Marina Mall" },
+        { name: "Dubai Hills Mall" },
+        { name: "Gold and Diamond Park" },
+        { name: "Souk Al Bahar" },
+        { name: "The Springs Souk" },
       ],
     },
     {
       title: "Emaar Hospitality",
       items: [
-        "Address Hotels + Resorts",
-        "Vida Hotels and Resorts",
-        "Armani Hotels & Resorts",
-        "Al Alamein Hotel Egypt",
-        "Rove Hotels",
+        { name: "Address Hotels + Resorts" },
+        { name: "Vida Hotels and Resorts" },
+        { name: "Armani Hotels & Resorts" },
+        { name: "Al Alamein Hotel Egypt" },
+        { name: "Rove Hotels" },
       ],
     },
     {
       title: "Emaar Leisure Group",
       items: [
-        "Dubai Polo & Equestrian Club",
-        "Arabian Ranches Golf Club",
-        "Dubai Hills Golf Club",
-        "Dubai Marina Yacht Club",
-        "Creek Marina Yacht Club",
-        "Veo Fitness",
+        { name: "Dubai Polo & Equestrian Club" },
+        { name: "Arabian Ranches Golf Club" },
+        { name: "Dubai Hills Golf Club" },
+        { name: "Dubai Marina Yacht Club" },
+        { name: "Creek Marina Yacht Club" },
+        { name: "Veo Fitness" },
       ],
     },
   ];
@@ -188,7 +189,15 @@ export function Footer() {
                 }`}
               >
                 {section.items.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i}>
+                    {item.link ? (
+                      <Link to={item.link} className="text-decoration-none text-dark">
+                        {item.name}
+                      </Link>
+                    ) : (
+                      item.name
+                    )}
+                  </li>
                 ))}
               </ul>
             </div>

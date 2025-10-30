@@ -21,7 +21,7 @@
 
 /* Optional subtle fade on hover */
 .nav-hover:hover {
-  color: #f8f9fa !important;
+  color: black!important;
 }
 /* Dropdown customization */
 .dropdown-menu {
@@ -132,7 +132,7 @@
 
 /* Navbar hover underline */
 .navbar .nav-link {
-  color: white;
+  color: black;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -144,7 +144,7 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: white;
+  background-color: black;
   transition: width 0.3s ease;
 }
 

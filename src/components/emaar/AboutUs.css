@@ -1,0 +1,319 @@
+/* Overview Section */
+.overview-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.overview-image-wrapper {
+  position: relative;
+}
+
+.overview-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text box styling */
+.overview-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top:0 ;
+  background-color: white;
+  max-width: 800px;
+  padding: 2rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(50%);
+}
+
+.overview-text h1 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.overview-text h6 {
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overview-text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+/* === Chairman Section === */
+.chairman-section {
+  position: relative;
+  overflow: hidden;
+  margin-top: 6rem;
+}
+
+.chairman-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.chairman-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 2rem 3rem;
+  max-width: 600px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.chairman-text .quote {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #000;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.chairman-text .founder {
+  color: #555;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+/* === Who We Are Section === */
+.who-we-are-section {
+  background-color: #ffffff;
+}
+
+.who-we-are-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin-top: 10%;
+}
+
+.who-card {
+  background-color: #f5f5f5; /* light grey background */
+  height: 350px;
+}
+
+
+.who-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.who-card .btn {
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.who-card .btn:hover {
+  color: #fff;
+  border-color: black;
+}
+
+
+
+/* === Fix gap between PROPERTIES heading and text === */
+.properties-section .section-header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.properties-label {
+  margin-bottom: 0 !important;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.properties-section .no-gap-between {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Text section above images */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -570px; /* pulls the heading closer to PROPERTIES */
+}
+/*more*/
+
+.more-section h2 {
+  color: #022047;
+  margin-bottom: 1rem;
+}
+
+.more-image {
+  transition: transform 0.3s ease;
+}
+
+.more-image:hover {
+    transform: scale(1.04);
+    transition: transform 0.4s ease-in-out;
+}
+
+.more-section h5 {
+  font-size: 1rem;
+  color: #000;
+  margin-top: 0.5rem;
+}
+
+/*corporate*/
+.corporate-section {
+  background-color: #f8f9fa;
+}
+
+.corporate-card {
+  background: #fff;
+}
+
+
+.corporate-image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.corporate-card h5 {
+  color: #222;
+}
+
+.corporate-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+    color: #222;
+}
+
+.corporate-card .btn {
+  font-weight: 500;
+}
+/*Awards*/
+.communities-section {
+  padding: 60px 0;
+  position: relative;
+}
+
+.nav-arrows {
+  margin-right: 20px;
+}
+
+.arrow-btn {
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+ 
+
+  transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.community-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+.community-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  
+  
+}
+.community-img:hover{
+    transform: scale(1.04);
+    transition: transform 0.4s ease-in-out;
+  
+
+    
+}
+
+.community-info h5 {
+  margin-bottom: 6px;
+}
+
+.community-info p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+/* Hide arrows on mobile */
+@media (max-width: 767px) {
+  .nav-arrows {
+    display: none !important;
+  }
+}
+
+/* Swiper adjustments */
+.swiper {
+  padding-bottom: 30px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+/* Hide nav arrows on mobile if needed */
+@media (max-width: 767px) {
+  .nav-arrows {
+    display: none !important;
+  }
+}
+
+/* Add smooth swipe spacing */
+.communities-swiper {
+  padding-bottom: 20px;
+}
+
+.community-card {
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.community-card:active {
+  cursor: grabbing;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .overview-text {
+    position: static;
+    transform: none;
+    margin-top: -40px;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+/* Responsive */
+@media (max-width: 992px) {
+  .chairman-text {
+    position: static;
+    max-width: 100%;
+    margin-top: -40px;
+    box-shadow: none;
+  }
+  .chairman-text .quote {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .more-section .col-6 {
+    margin-bottom: 20px;
+  }
+}
